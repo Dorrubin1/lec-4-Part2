@@ -1,0 +1,43 @@
+import React from 'react';
+
+import { NavLink } from 'react-router-dom';
+
+const MainHeader = () => {
+    return (
+        <div>
+
+            <header className='card'></header>
+            <nav>
+                <ul className='nav nav-tabs justify-content-center'>
+                <li className="nav-item">
+                        <NavLink to="/"
+                            className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                        >Home</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="/login"
+                            className={(navData) => navData.isActive ? "nav-link active" : "nav-link"}
+                        >Login</NavLink>
+                    </li>
+
+
+                    <li className="nav-item">
+                        <NavLink to="/signup"
+                            className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                        >Sign Up</NavLink>
+                    </li>
+
+                    <li className="nav-item">
+                        <NavLink to="/other"
+                            className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                        >Other Page</NavLink>
+                    </li>
+                   
+                </ul>
+            </nav>
+
+
+        </div>)
+};
+
+export default MainHeader;
