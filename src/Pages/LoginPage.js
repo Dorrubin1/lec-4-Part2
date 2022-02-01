@@ -2,8 +2,6 @@
 import React, { useState } from 'react'
 import Input from '../Components/Input'
 import ButtonWithProgress from '../Components/ButtonWithProgress'
-
-
   const LoginPage = (props) => {
     const [username, setUserName] = useState('')
     const [password, setPassword] = useState('')
